@@ -1,6 +1,47 @@
-.Main{
-  width: 100vw;
-  height: 100vh;
-  background-color: #F0EDED;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.Main {
+  display: flex;
+  font-family: 'Inter', sans-serif; 
+}
+
+.SideBarCont {
+  width: 128px;
+  height: 100%;
+}
+
+.FeaturedBooksCont {
+  flex: 1;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif; 
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .Main {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .SideBarCont {
+    width: 100%; 
+    height: 64px;
+    flex-direction: row; 
+    justify-content: space-between; 
+    position: fixed; 
+  }
+
+  .FeaturedBooksCont {
+    max-width: 100%; 
+  }
 }
 
