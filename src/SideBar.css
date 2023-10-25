@@ -1,0 +1,59 @@
+.SideBar {
+    width: 128px;
+    height: 100vh;
+    background-color: #726957;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: height 0.3s ease; 
+  }
+  
+  .TopCont {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 25px;
+  }
+  
+  .MidCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .MidCont img {
+    margin-bottom: 25px;
+  }
+  
+  .BotCont {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 25px; 
+  }
+  
+  .SideBar img {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+  }
+  
+  .SideBar.collapsed {
+    width: 128px;
+    height: 128px;
+  }
+  
+  .SideBar.collapsed .MidCont {
+    display: none;
+  }
+  
+  .SideBar.collapsed .BotCont {
+    display: none;
+  }
+  
+  .SideBar.collapsed .TopCont {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
