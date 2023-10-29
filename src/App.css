@@ -6,7 +6,7 @@
 }
 
 .SideBarCont {
-  width: 128pxa
+  width: 80px;
   height: 100%;
 }
 
@@ -42,6 +42,7 @@ h2 {
 
   .FeaturedBooksCont {
     max-width: 100%; 
+    margin-top: 50px;
   }
 }
 
