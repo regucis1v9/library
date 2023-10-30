@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../SideBar.css';
+import '../css/SideBar.css';
 
 function SideBar() {
   const [collapsed, setCollapsed] = useState(false);
@@ -12,6 +12,7 @@ function SideBar() {
     <div className={`SideBar ${collapsed ? 'collapsed' : ''}`}>
       <div className="TopCont">
         <img
+          className='marginTop15'
           src={process.env.PUBLIC_URL + '/images/Burger_menu.png'}
           alt="Burger Menu"
           onClick={toggleSidebar}
