@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../LatestBooks.css';
+import '../AllBooks.css';
 
-function LatestBooks() {
+function AllBooks() {
   const books = [
     {
       title: "Book 1",
@@ -42,28 +42,35 @@ function LatestBooks() {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const showBooks = books.slice(startIndex, startIndex + 3);
+  const filteredBooks = books.filter((book) =>
+    book.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
-  const handlePrev = () => {
-    if (startIndex > 0) {
-      setStartIndex(startIndex - 3);
-    }
-  };
-
-  const handleNext = () => {
-    if (startIndex < books.length - 3) {
-      setStartIndex(startIndex + 3);
-    }
-  };
+  const showBooks = filteredBooks.slice(startIndex, startIndex + 3);
 
   return (
-    <div className="LatestBooks">
-      <h2 className="Title">Latest Books</h2>
-      <div className="BooksContainer">
-        <div className="Arrows" onClick={handlePrev}>
-          <img src={process.env.PUBLIC_URL + '/images/Arrow_icon.png'} className='PrevArrow' />
+    <div className="AllBooks">
+
+        <div className="AllBooksTitleCont">
+            <h2 className="Title">
+                All Books
+            </h2>
+            <div className="SearchCont">
+                <input type="text" placeholder="Search bar" className="SearchBar" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
+                <div className="SearchIconBox">
+                    <img src={process.env.PUBLIC_URL + '/images/Search_icon.png'} alt="Search Icon" className="SearchIcon"/>
+                </div>
+            </div>
+            <div className="FilterCont">
+                <div className="FilterIconBox">
+                    <img src={process.env.PUBLIC_URL + '/images/Filter_icon.png'} alt="Filter Icon" className="FilterIcon"/>
+                </div>
+            </div>
         </div>
+
+      <div className="BooksContainer">
         <div className="Books">
           {showBooks.map((book, index) => (
             <div key={index} className="Book">
@@ -77,12 +84,9 @@ function LatestBooks() {
             </div>
           ))}
         </div>
-        <div className="Arrows" onClick={handleNext}>
-          <img src={process.env.PUBLIC_URL + '/images/Arrow_icon.png'} className='NextArrow' />
-        </div>
       </div>
     </div>
   );
 }
 
-export default LatestBooks;
+export default AllBooks;

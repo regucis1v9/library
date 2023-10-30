@@ -28,15 +28,16 @@
 }
 
 .LatestBooksCont {
+  flex: 1; /* Takes remaining available space */
+  padding: 20px; /* Add padding if needed */
   display: flex;
   flex-direction: column;
-  height: 800px;
-  width: auto;  
-  padding: 20px;
+  align-items: center; /* Center the content horizontally */
+  font-family: 'Inter', sans-serif; /* Use your desired font-family */
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 48px;
   margin-top: 1rem;
 }
 
@@ -55,6 +56,11 @@ h2 {
   }
 
   .FeaturedBooksCont {
+    max-width: 100%; 
+    margin-top: 50px;
+  }
+
+  .LatestBooksCont {
     max-width: 100%; 
     margin-top: 50px;
   }

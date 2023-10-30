@@ -3,6 +3,7 @@ import '../App.css';
 import SideBar from './SideBar';
 import FeaturedBooks from './FeaturedBooks';
 import LatestBooks from './LatestBooks';
+import AllBooks from './AllBooks'; // Import the AllBooks component
 
 function App() {
   return (
@@ -15,9 +16,13 @@ function App() {
           <h2>Featured Books</h2>
           <FeaturedBooks />
         </div>
-
+        
         <div className="LatestBooksCont">
           <LatestBooks />
+        </div>
+        
+        <div className="AllBooksCont"> 
+          <AllBooks />
         </div>
       </div>
     </div>

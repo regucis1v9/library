@@ -1,44 +1,108 @@
 .LatestBooks {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  
-  .BooksCont {
-    display: flex;
-    max-width: 1600px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    overflow: hidden;
-    position: relative;
-    scroll-behavior: smooth;
-  }
-  
-  .Book {
-    width: 400px;
-    height: 600px;
-    margin-right: 50px;
-    border: 1px solid black;
-    transition: transform 0.3s;
-  }
-  
-  
-  .ArrowButtons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .ArrowLeft img {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
-  
-  .ArrowRight img {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transform: rotate(180deg);
-  }
-  
+  text-align: center;
+}
+
+.Title {
+  text-align: left;
+}
+
+.BooksContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Books {
+  display: flex;
+  align-items: center;
+  height: 700px;
+}
+
+.Book {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: #B3B3B3;
+  margin: 0 50px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.Book:hover{
+  transform: scale(1.035);
+  cursor: pointer;
+}
+
+.BookImage {
+  height: 320px;
+  width: 350px;
+  border: 1px solid black;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+}
+
+.Author {
+  height: 55px;
+  width: 350px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+}
+
+.TitleRating {
+  display: flex;
+  width: 350px;
+  height: 55px;
+  border: 1px solid black;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+}
+
+.BookTitle {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BookRating {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Description {
+  height: 140px;
+  width: 350px;
+  border: 1px solid black;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+}
+
+.Arrows {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.PrevArrow,
+.NextArrow {
+  width: 50px;
+  height: 50px;
+}
+
+.NextArrow {
+  transform: rotate(180deg);
+}
