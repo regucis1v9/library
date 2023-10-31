@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height:700px;
+  height:650px;
 }
 .submit{
   width:250px;
@@ -72,4 +72,23 @@ a, p{
   width:100%;
   display:block;
   text-align:center;
+}
+img{
+  width:80vw;
+  max-width: 500px;
+  max-height: 500px;
+}
+.message{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .left{
+    display:none;
+  }
+  .right{
+    width:100%;
+  }
 }
