@@ -22,6 +22,11 @@
   align-items: center;
   margin-top:5px;
 }
+.SideBarCont {
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+}
 
 body {
   background-color: #F0EDED;
@@ -49,15 +54,17 @@ font-weight: 400;
 line-height: normal;
 }
 .content-box{
-  width:1410px;
+  width:1290px;
   height:100%;
-  border:none;
+ 
+
 }
 /* Favorites  style  ----------------------------------------------------------------------------------------------------     */
 .fav-box{
-  width:650px;
+  width:630px;
   height:100%;
-  
+
+
 }
 
 .fav-content{
@@ -98,26 +105,145 @@ margin:15px;
 }
  /* Review style  ----------------------------------------------------------------------------------------------------     */
 .rew-box{
-  width:750px;
+  width:650px;
   height:100%;
-  
+ 
+
 }
 .rew-content{
-  width:700px;
+  width:648px;
   height:100%;
   border-radius: 10px;
 background: #D9D9D9;
 }
 .rew-content-box{
-  width:645px;
+  width:615px;
   height:100%;
-  border: 2px solid #666262; /* Add a border with a light gray color */
-     /* Add some padding to give it spacing from the border */
+  border: 2px solid #666262;
     border-radius:5px;
     margin:15px;
+ 
+}
+.comment-box {
+  width: 100%;
+  max-height: 100px;
+  border: none;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  margin-top: 0; /* Remove margin at the top */
+}
 
+.comment-box.expanded {
+  max-height: none;
+  overflow: visible;
+}
+
+/* Book.jsx --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.view-box{
+  width:1280px;
+  height:100%;
+  border: 2px solid #666262;
+  border-radius:10px;
+
+}
+.book-img{
+  width: 595px;
+  height: 730px;
+  
+  background-image: url('https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg');
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.img-big{
+  width: 480px;
+  height: 680px;
+  flex-shrink: 0;
+}
+.img-heart{
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  color: white; /* Default color is white */
+  transition: color 0.3s; /* Add a smooth color transition */
+  cursor: pointer;
+}
+.img-heart.red {
+  color: green; /* Red color when the "red" class is applied */
+}
+
+.info-box{
+  width: 680px;
+  min-height:730px;
+  
+  height:100%;
+}
+.x-box{
+  width:50px;
+  height:50px;
+  
+}
+.x-box h1 {
+  cursor: pointer; /* Add this line for the pointer cursor */
+}
+.x-box h1:hover {
+  color: red; /* Change the color to red on hover */
+}
+.title-box {
+  height: 70px;
+  
+  width: 520px;
+}
+.desc-box2{
+  width:600px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  min-height:100px;
+  max-height:263px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+.desc-box3{
+  width:600px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  min-height:100px;
+  height:100%;
+  
+}
+
+.review-box{
+  width: 100%;
    
+    border: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    margin-top: 0;
+}
+
+@media (max-width: 360px) {
+  .content-box{
+    width:950px;
+    height:100%;
     
+  
+  }
+  .view-box{
+    width:950px;
+    height:100%;
+    border: 2px solid #666262;
+    border-radius:10px;
+  
+  }
+
 }
 
 

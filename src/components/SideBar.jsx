@@ -12,6 +12,7 @@ function SideBar() {
     <div className={`SideBar ${collapsed ? 'collapsed' : ''}`}>
       <div className="TopCont">
         <img
+          className='marginTop15'
           src={process.env.PUBLIC_URL + '/images/Burger_menu.png'}
           alt="Burger Menu"
           onClick={toggleSidebar}
