@@ -49,6 +49,14 @@
   border-radius: 5px;
 }
 
+.BookImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+
 .Author {
   height: 55px;
   width: 350px;
@@ -105,4 +113,42 @@
 
 .NextArrow {
   transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .BooksContainer {
+    flex-direction: column; /* Stack books vertically */
+    justify-content: center; /* Center align books vertically */
+    align-items: center; /* Center align books horizontally */
+  }
+
+  .Book {
+    width: 90%; /* Adjust the book width for mobile */
+    height: auto; /* Let the height adapt to content */
+    margin: 20px 0; /* Add some margin between books */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .BookImage {
+    width: 100%; /* Adjust the book image width */
+    height: auto; /* Let the height adapt to the image */
+    margin: 10px 0; /* Add some margin */
+  }
+
+  .Author {
+    width: 90%; /* Adjust the author section width */
+  }
+
+  .TitleRating {
+    width: 90%; /* Adjust the title and rating section width */
+  }
+
+  .BookTitle,
+  .BookRating {
+    width: 100%; /* Adjust the title and rating width for mobile */
+  }
+
+  .Description {
+    width: 90%; /* Adjust the description section width */
+  }
 }

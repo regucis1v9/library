@@ -3,7 +3,7 @@ import '../App.css';
 import SideBar from './SideBar';
 import FeaturedBooks from './FeaturedBooks';
 import LatestBooks from './LatestBooks';
-import AllBooks from './AllBooks'; // Import the AllBooks component
+import AllBooks from './AllBooks';
 
 function App() {
   return (

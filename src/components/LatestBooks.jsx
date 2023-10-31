@@ -47,13 +47,13 @@ function LatestBooks() {
 
   const handlePrev = () => {
     if (startIndex > 0) {
-      setStartIndex(startIndex - 3);
+      setStartIndex(startIndex - 1);
     }
   };
 
   const handleNext = () => {
     if (startIndex < books.length - 3) {
-      setStartIndex(startIndex + 3);
+      setStartIndex(startIndex + 1);
     }
   };
 
@@ -67,7 +67,9 @@ function LatestBooks() {
         <div className="Books">
           {showBooks.map((book, index) => (
             <div key={index} className="Book">
-              <div className="BookImage">Book Image</div>
+              <div className="BookImage">
+                <img src={process.env.PUBLIC_URL + '/images/book.png'} alt="Book"/>
+              </div>
               <div className="Author">{book.author}</div>
               <div className="TitleRating">
                 <div className="BookTitle">{book.title}</div>

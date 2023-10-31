@@ -45,8 +45,10 @@ function AllBooks() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const filteredBooks = books.filter((book) =>
-    book.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  book.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+  book.author.toLowerCase().includes(searchQuery.toLowerCase())
+);
+
 
   const showBooks = filteredBooks.slice(startIndex, startIndex + 3);
 
@@ -74,7 +76,9 @@ function AllBooks() {
         <div className="Books">
           {showBooks.map((book, index) => (
             <div key={index} className="Book">
-              <div className="BookImage">Book Image</div>
+              <div className="BookImage">
+                <img src={process.env.PUBLIC_URL + '/images/book.png'} alt="Book"/>
+              </div>
               <div className="Author">{book.author}</div>
               <div className="TitleRating">
                 <div className="BookTitle">{book.title}</div>

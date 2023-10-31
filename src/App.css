@@ -28,12 +28,12 @@
 }
 
 .LatestBooksCont {
-  flex: 1; /* Takes remaining available space */
-  padding: 20px; /* Add padding if needed */
+  flex: 1;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content horizontally */
-  font-family: 'Inter', sans-serif; /* Use your desired font-family */
+  align-items: center;
+  font-family: 'Inter', sans-serif;
 }
 
 h2 {
