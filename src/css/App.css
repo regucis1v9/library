@@ -53,6 +53,8 @@ input{
   margin-bottom:15px;
   text-indent: 30px;
   font-size:30px; 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline:none;
 }
 input::placeholder{
   text-indent:30px;

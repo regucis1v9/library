@@ -8,7 +8,7 @@ function Register() {
     <div className="main">
       <div className="left">
         <div className="imageBox">
-          <div className='message'>Lets get started</div>
+          <div className='message'>Lets get started!</div>
           <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUiwISyFWQSsOmqPiIUCiRet5XXrtP2sBWBwHnj7HOimxnqELO" alt="" />
         </div>
       </div>
