@@ -4,36 +4,42 @@ import '../LatestBooks.css';
 function LatestBooks() {
   const books = [
     {
+      image: process.env.PUBLIC_URL + '/images/book1.png', 
       title: "Book 1",
       author: "Author 1",
       rating: "4.5",
       description: "Description for Book 1",
     },
     {
+      image: process.env.PUBLIC_URL + '/images/book.png', 
       title: "Book 2",
       author: "Author 2",
       rating: "4.0",
       description: "Description for Book 2",
     },
     {
+      image: process.env.PUBLIC_URL + '/images/book1.png', 
       title: "Book 3",
       author: "Author 3",
       rating: "4.2",
       description: "Description for Book 3",
     },
     {
+      image: process.env.PUBLIC_URL + '/images/book.png', 
       title: "Book 4",
       author: "Author 4",
       rating: "3.8",
       description: "Description for Book 4",
     },
     {
+      image: process.env.PUBLIC_URL + '/images/book1.png', 
       title: "Book 5",
       author: "Author 5",
       rating: "4.8",
       description: "Description for Book 5",
     },
     {
+      image: process.env.PUBLIC_URL + '/images/book.png', 
       title: "Book 6",
       author: "Author 6",
       rating: "4.3",
@@ -68,7 +74,7 @@ function LatestBooks() {
           {showBooks.map((book, index) => (
             <div key={index} className="Book">
               <div className="BookImage">
-                <img src={process.env.PUBLIC_URL + '/images/book.png'} alt="Book"/>
+                <img src={book.image}/>
               </div>
               <div className="Author">{book.author}</div>
               <div className="TitleRating">
