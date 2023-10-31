@@ -4,7 +4,6 @@
   max-height: 400px;
   height: 100%;
   border-radius: 20px;
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,4 +44,18 @@
   height: 50px;
   cursor: pointer;
   transform: rotate(180deg);
+}
+
+
+@media (max-width: 768px) {
+  .ArrowLeft img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .ArrowRight img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
 }
