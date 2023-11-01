@@ -1,0 +1,247 @@
+
+.main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top:5px;
+}
+.SideBarCont {
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+}
+
+body {
+  background-color: #F0EDED;
+}
+.mini-box{
+  width: 55px;
+height: 55px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #726957;
+position: relative;
+  left: 510px;
+  top: 80px;
+}
+.img-style {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+h1,h2,h3,h4{
+  font-family: 'Inter', sans-serif;
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.content-box{
+  width:1290px;
+  height:100%;
+ 
+
+}
+/* Favorites  style  ----------------------------------------------------------------------------------------------------     */
+.fav-box{
+  width:630px;
+  height:100%;
+
+
+}
+
+.fav-content{
+  width:620px;
+  height:100%;
+  border-radius: 10px;
+background: #D9D9D9;
+}
+.long-box{
+  width:280px;
+  height:100%;
+  border-radius: 10px;
+background: #B3B3B3;
+margin:12px;
+}
+
+.book-box{
+  width:240px;
+  height:240px;
+  border-radius: 5px;
+background: #D9D9D9;
+margin:12px;
+}
+
+.author-box{
+  height:40px;
+  width:240px;
+  border-radius: 5px;
+background: #D9D9D9;
+}
+
+.desc-box{
+  width:240px;
+  height:100%;
+  border-radius: 5px;
+background: #D9D9D9;
+margin:15px;
+}
+ /* Review style  ----------------------------------------------------------------------------------------------------     */
+.rew-box{
+  width:650px;
+  height:100%;
+ 
+
+}
+.rew-content{
+  width:648px;
+  height:100%;
+  border-radius: 10px;
+background: #D9D9D9;
+}
+.rew-content-box{
+  width:615px;
+  height:100%;
+  border: 2px solid #666262;
+    border-radius:5px;
+    margin:15px;
+ 
+}
+.comment-box {
+  width: 100%;
+  max-height: 100px;
+  border: none;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  margin-top: 0; /* Remove margin at the top */
+}
+
+.comment-box.expanded {
+  max-height: none;
+  overflow: visible;
+}
+
+/* Book.jsx --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.view-box{
+  width:1280px;
+  height:100%;
+  border: 2px solid #666262;
+  border-radius:10px;
+
+}
+.book-img{
+  width: 595px;
+  height: 730px;
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.img-big{
+  width: 480px;
+  height: 680px;
+  flex-shrink: 0;
+}
+.img-heart{
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  color: white; /* Default color is white */
+  transition: color 0.3s; /* Add a smooth color transition */
+  cursor: pointer;
+}
+.img-heart.red {
+  color: green; /* Red color when the "red" class is applied */
+}
+
+.info-box{
+  width: 680px;
+  min-height:730px;
+  
+  height:100%;
+}
+.x-box{
+  width:50px;
+  height:50px;
+  
+}
+.x-box h1 {
+  cursor: pointer; /* Add this line for the pointer cursor */
+}
+.x-box h1:hover {
+  color: red; /* Change the color to red on hover */
+}
+.title-box {
+  height: 70px;
+  
+  width: 520px;
+}
+.desc-box2{
+  width:600px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  min-height:100px;
+  max-height:263px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+.desc-box3{
+  width:600px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  min-height:100px;
+  height:100%;
+  
+}
+
+.review-box{
+  width: 100%;
+   
+    border: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    margin-top: 0;
+}
+
+@media (max-width: 360px) {
+  .content-box{
+    width:950px;
+    height:100%;
+    
+  
+  }
+  .view-box{
+    width:950px;
+    height:100%;
+    border: 2px solid #666262;
+    border-radius:10px;
+  
+  }
+
+}
+
+

@@ -1,0 +1,69 @@
+.FeaturedBooks {
+  max-width: 800px;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+}
+
+.carouselItem{
+  width: 100%;
+  height:300px;
+  border-radius: 10px;
+  display:flex;
+  background: linear-gradient(to bottom, #726957, #000000a1);
+  align-items: center;
+  justify-content: space-around;
+  color:white;
+  text-decoration: none;
+}
+.carousel-root{
+  width:100%;
+  height:100%;
+}
+.featuredTitle{
+  color:white;
+  font-size: 30px;
+  font-weight: bold;
+  height:75px;
+  padding:10px;
+}
+.featuredAuthor{
+  color:white;
+  height:100px;
+}
+.featuredDescription{
+  color:white;
+  height:125px;
+}
+.featuredImage{
+  height:300px;
+  height:300px;
+}
+.carousel .slide img{
+  width:200px;
+}
+.thumbs{
+  display:none
+}
+.featuredInfo{
+  height:300px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .ArrowLeft img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .ArrowRight img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+}
